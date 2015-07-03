@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe UfwcResultsReducer do
-  it 'returns an array of results', reducing: 'results', live: true do
+describe UfwcResultsReducer, reducing: 'results' do
+  it 'returns an array of results', live: true do
     expect(reducer.results).to be_kind_of(Array)
   end
 
